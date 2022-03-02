@@ -8,12 +8,17 @@ I wrote this plugin because I oftentimes find myself bouncing back and forth
 between terminal and GUI Vim sessions. When I've been in the terminal for a
 while, doing a number of `:q`'s to quit Vim, that muscle memory seems to carry
 over when I go back to my GUI vim, resulting in an unintended `:q` that quits
-my GUI session where I may still have had many things in flight.
+my GUI session where I may have had many things in flight.
 
 The core of the plugin is a function called `ConfirmQuit()` which is made
 available to plugin users (i.e. it's not script scoped) who wish to add or
 modify key assignments. `ConfirmQuit()` takes one parameter indicating whether
 or not a write operation should be performed before quiting.
+
+## Installation
+
+Simply install [`ljohnston/vim-confirmquit`](https://github.com/ljohnston/vim-confirmquit)
+via your favorite Vim package manager.
 
 ## Key Assignments
 
